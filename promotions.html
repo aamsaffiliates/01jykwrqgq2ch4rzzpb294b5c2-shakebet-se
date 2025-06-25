@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakebet Casino Promotions - Welcome Bonus 200% up to 15,000 kr + Weekly Offers | Sweden</title>
+    <meta name="description" content="Discover all Shakebet Casino promotions including 200% welcome bonus, weekly reloads, weekend bonuses, cashback offers and daily promotions calendar. Exclusive bonuses for Swedish players.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Shakebet Casino Promotions - Massive Bonuses & Daily Rewards">
+    <meta property="og:description" content="Claim your 200% welcome bonus plus weekly reloads, cashback offers and daily promotions at Sweden's premier casino destination.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shakebet.se/promotions">
+    <meta property="og:site_name" content="Shakebet Casino">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="promotions.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'casino-red': '#fe2a18',
+                        'casino-black': '#0a0a0a',
+                        'casino-yellow': '#fff201',
+                        'casino-white': '#ffffff'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-casino-red text-casino-white overflow-x-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-star star-1"><i class="fas fa-star"></i></div>
+        <div class="floating-star star-2"><i class="fas fa-coins"></i></div>
+        <div class="floating-star star-3"><i class="fas fa-gem"></i></div>
+        <div class="floating-star star-4"><i class="fas fa-dice"></i></div>
+        <div class="floating-explosion explosion-1">💥</div>
+        <div class="floating-explosion explosion-2">⚡</div>
+        <div class="floating-explosion explosion-3">💫</div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-casino-black mx-4 mt-4 border-4 border-casino-yellow header-float">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="/">
+                <img src="src/logo.png" class="h-24 -my-6" alt="shakebet logo" />
+            </a>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="/" class="nav-link font-bold hover:text-casino-yellow transition-colors">HOME</a></li>
+                <li><a href="/slots" class="nav-link font-bold hover:text-casino-yellow transition-colors">GAMES</a></li>
+                <li><a href="/promotions" class="nav-link font-bold hover:text-casino-yellow transition-colors">BONUSES</a></li>
+                <li><a href="#about" class="nav-link font-bold hover:text-casino-yellow transition-colors">ABOUT</a></li>
+                <li><a href="#support" class="nav-link font-bold hover:text-casino-yellow transition-colors">SUPPORT</a></li>
+            </ul>
+            <button class="cta-button bg-casino-yellow text-casino-black px-6 py-3 font-black border-4 border-casino-black hover-transform" onclick="window.location.href='/register'">
+                JOIN NOW
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="mt-24 min-h-screen flex items-center justify-center pt-24 px-4">
+        <div class="container mx-auto text-center">
+            <div class="max-w-4xl mx-auto">
+                <!-- Page Title -->
+                <h1 class="text-5xl lg:text-7xl font-black text-shadow-3d leading-tight mb-8">
+                    EXPLOSIVE<br>
+                    <span class="text-casino-yellow">PROMOTIONS</span>
+                </h1>
+                
+                <!-- Welcome Bonus Highlight -->
+                <div class="welcome-bonus-hero bg-casino-black border-4 border-casino-yellow p-12 mb-12 relative overflow-hidden">
+                    <div class="bonus-spotlight"></div>
+                    <div class="relative z-10">
+                        <div class="text-6xl lg:text-8xl font-black text-casino-yellow text-shadow-3d mb-4 pulse-glow">200%</div>
+                        <div class="text-3xl lg:text-4xl font-bold mb-4">WELCOME BONUS</div>
+                        <div class="text-2xl lg:text-3xl text-casino-yellow font-bold mb-6">UP TO 15,000 KR</div>
+                        <div class="text-xl font-bold mb-8">+ 10% WEEKLY CASHBACK</div>
+                        <button class="cta-button bg-casino-yellow text-casino-black px-12 py-6 text-2xl font-black border-4 border-casino-black hover-transform mega-pulse" onclick="window.location.href='/register'">
+                            CLAIM NOW
+                        </button>
+                    </div>
+                </div>
+
+                <p class="text-xl lg:text-2xl font-bold max-w-3xl mx-auto mb-8">
+                    Discover <a class="text-casino-yellow hover:text-white hover:underline" href="/">Shakebet</a> and most explosive bonus collection with daily rewards, weekly reloads, and massive cashback offers designed for serious players.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotions Table -->
+    <section class="py-20 px-4 bg-casino-black">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-black text-center mb-16 text-shadow-3d text-casino-yellow">ALL PROMOTIONS</h2>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full border-4 border-casino-yellow promotions-table">
+                    <thead class="bg-casino-yellow text-casino-black">
+                        <tr>
+                            <th class="p-6 font-black text-left">PROMOTION</th>
+                            <th class="p-6 font-black text-center">BONUS AMOUNT</th>
+                            <th class="p-6 font-black text-center">FREE SPINS</th>
+                            <th class="p-6 font-black text-center">WAGERING</th>
+                            <th class="p-6 font-black text-center">VALIDITY</th>
+                            <th class="p-6 font-black text-center">ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b-4 border-casino-yellow promo-row featured-row">
+                            <td class="p-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-crown text-casino-yellow text-2xl mr-4"></i>
+                                    <div>
+                                        <h3 class="font-black text-xl text-casino-yellow">WELCOME BONUS</h3>
+                                        <p class="text-sm">New players only</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="p-6 text-center font-bold text-2xl text-casino-yellow">200% up to 15,000 kr</td>
+                            <td class="p-6 text-center font-bold">-</td>
+                            <td class="p-6 text-center font-bold">35x</td>
+                            <td class="p-6 text-center font-bold">30 days</td>
+                            <td class="p-6 text-center">
+                                <button class="cta-button bg-casino-yellow text-casino-black px-4 py-2 font-bold border-2 border-casino-black hover-transform" onclick="window.location.href='/register'">CLAIM</button>
+                            </td>
+                        </tr>
+                        <tr class="border-b-4 border-casino-yellow promo-row">
+                            <td class="p-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-sync text-casino-yellow text-2xl mr-4"></i>
+                                    <div>
+                                        <h3 class="font-black text-xl">WEEKLY RELOAD</h3>
+                                        <p class="text-sm">Every Monday</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="p-6 text-center font-bold text-xl">50% up to 2,500 kr</td>
+                            <td class="p-6 text-center font-bold text-casino-yellow">50 Free Spins</td>
+                            <td class="p-6 text-center font-bold">35x</td>
+                            <td class="p-6 text-center font-bold">7 days</td>
+                            <td class="p-6 text-center">
+                                <button class="cta-button bg-casino-yellow text-casino-black px-4 py-2 font-bold border-2 border-casino-black hover-transform" onclick="window.location.href='/register'">CLAIM</button>
+                            </td>
+                        </tr>
+                        <tr class="border-b-4 border-casino-yellow promo-row">
+                            <td class="p-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-calendar-weekend text-casino-yellow text-2xl mr-4"></i>
+                                    <div>
+                                        <h3 class="font-black text-xl">WEEKEND RELOAD</h3>
+                                        <p class="text-sm">Friday - Sunday</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="p-6 text-center font-bold text-xl">50% up to 5,000 kr</td>
+                            <td class="p-6 text-center font-bold text-casino-yellow">100 on Book of Dead</td>
+                            <td class="p-6 text-center font-bold">35x</td>
+                            <td class="p-6 text-center font-bold">7 days</td>
+                            <td class="p-6 text-center">
+                                <button class="cta-button bg-casino-yellow text-casino-black px-4 py-2 font-bold border-2 border-casino-black hover-transform" onclick="window.location.href='/register'">CLAIM</button>
+                            </td>
+                        </tr>
+                        <tr class="border-b-4 border-casino-yellow promo-row">
+                            <td class="p-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-hand-holding-usd text-casino-yellow text-2xl mr-4"></i>
+                                    <div>
+                                        <h3 class="font-black text-xl">WEEKLY CASHBACK</h3>
+                                        <p class="text-sm">Every Monday</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="p-6 text-center font-bold text-xl">10% of losses</td>
+                            <td class="p-6 text-center font-bold">-</td>
+                            <td class="p-6 text-center font-bold">1x</td>
+                            <td class="p-6 text-center font-bold">7 days</td>
+                            <td class="p-6 text-center">
+                                <button class="cta-button bg-casino-yellow text-casino-black px-4 py-2 font-bold border-2 border-casino-black hover-transform" onclick="window.location.href='/register'">AUTO</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotions Calendar -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-black text-center mb-16 text-shadow-3d">DAILY PROMOTIONS CALENDAR</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="calendar-intro bg-casino-black border-4 border-casino-yellow p-8 mb-12 text-center">
+                    <h3 class="text-2xl font-bold text-casino-yellow mb-4">NEVER MISS A BONUS DAY</h3>
+                    <p class="text-lg">Each day of the month brings unique rewards, exclusive offers, and surprise bonuses. Check your account daily to discover what explosive rewards await you!</p>
+                </div>
+
+                <div class="grid grid-cols-7 gap-2 mb-8">
+                    <!-- Calendar Header -->
+                    <div class="calendar-header">MON</div>
+                    <div class="calendar-header">TUE</div>
+                    <div class="calendar-header">WED</div>
+                    <div class="calendar-header">THU</div>
+                    <div class="calendar-header">FRI</div>
+                    <div class="calendar-header">SAT</div>
+                    <div class="calendar-header">SUN</div>
+
+                    <!-- Calendar Days -->
+                    <div class="calendar-day" data-day="1">
+                        <div class="day-number">1</div>
+                        <div class="day-bonus">50 Free Spins</div>
+                    </div>
+                    <div class="calendar-day" data-day="2">
+                        <div class="day-number">2</div>
+                        <div class="day-bonus">25% Reload</div>
+                    </div>
+                    <div class="calendar-day" data-day="3">
+                        <div class="day-number">3</div>
+                        <div class="day-bonus">Double Points</div>
+                    </div>
+                    <div class="calendar-day" data-day="4">
+                        <div class="day-number">4</div>
+                        <div class="day-bonus">100 Free Spins</div>
+                    </div>
+                    <div class="calendar-day" data-day="5">
+                        <div class="day-number">5</div>
+                        <div class="day-bonus">15% Cashback</div>
+                    </div>
+                    <div class="calendar-day" data-day="6">
+                        <div class="day-number">6</div>
+                        <div class="day-bonus">Weekend Boost</div>
+                    </div>
+                    <div class="calendar-day" data-day="7">
+                        <div class="day-number">7</div>
+                        <div class="day-bonus">Mystery Bonus</div>
+                    </div>
+                    <div class="calendar-day" data-day="8">
+                        <div class="day-number">8</div>
+                        <div class="day-bonus">75 Free Spins</div>
+                    </div>
+                    <div class="calendar-day" data-day="9">
+                        <div class="day-number">9</div>
+                        <div class="day-bonus">30% Reload</div>
+                    </div>
+                    <div class="calendar-day" data-day="10">
+                        <div class="day-number">10</div>
+                        <div class="day-bonus">Tournament Entry</div>
+                    </div>
+                    <div class="calendar-day" data-day="11">
+                        <div class="day-number">11</div>
+                        <div class="day-bonus">150 Free Spins</div>
+                    </div>
+                    <div class="calendar-day" data-day="12">
+                        <div class="day-number">12</div>
+                        <div class="day-bonus">20% Cashback</div>
+                    </div>
+                    <div class="calendar-day" data-day="13">
+                        <div class="day-number">13</div>
+                        <div class="day-bonus">Lucky 13 Bonus</div>
+                    </div>
+                    <div class="calendar-day" data-day="14">
+                        <div class="day-number">14</div>
+                        <div class="day-bonus">Valentine Spins</div>
+                    </div>
+                    <div class="calendar-day" data-day="15">
+                        <div class="day-number">15</div>
+                        <div class="day-bonus">Mid-Month Mega</div>
+                    </div>
+                    <div class="calendar-day" data-day="16">
+                        <div class="day-number">16</div>
+                        <div class="day-bonus">40% Reload</div>
+                    </div>
+                    <div class="calendar-day" data-day="17">
+                        <div class="day-number">17</div>
+                        <div class="day-bonus">Triple Points</div>
+                    </div>
+                    <div class="calendar-day" data-day="18">
+                        <div class="day-number">18</div>
+                        <div class="day-bonus">200 Free Spins</div>
+                    </div>
+                    <div class="calendar-day" data-day="19">
+                        <div class="day-number">19</div>
+                        <div class="day-bonus">25% Cashback</div>
+                    </div>
+                    <div class="calendar-day" data-day="20">
+                        <div class="day-number">20</div>
+                        <div class="day-bonus">Weekend Preview</div>
+                    </div>
+                    <div class="calendar-day" data-day="21">
+                        <div class="day-number">21</div>
+                        <div class="day-bonus">Blackjack Bonus</div>
+                    </div>
+                    <div class="calendar-day" data-day="22">
+                        <div class="day-number">22</div>
+                        <div class="day-bonus">Double Trouble</div>
+                    </div>
+                    <div class="calendar-day" data-day="23">
+                        <div class="day-number">23</div>
+                        <div class="day-bonus">50% Reload</div>
+                    </div>
+                    <div class="calendar-day" data-day="24">
+                        <div class="day-number">24</div>
+                        <div class="day-bonus">Christmas Eve</div>
+                    </div>
+                    <div class="calendar-day" data-day="25">
+                        <div class="day-number">25</div>
+                        <div class="day-bonus">Christmas Mega</div>
+                    </div>
+                    <div class="calendar-day" data-day="26">
+                        <div class="day-number">26</div>
+                        <div class="day-bonus">Boxing Day</div>
+                    </div>
+                    <div class="calendar-day" data-day="27">
+                        <div class="day-number">27</div>
+                        <div class="day-bonus">300 Free Spins</div>
+                    </div>
+                    <div class="calendar-day" data-day="28">
+                        <div class="day-number">28</div>
+                        <div class="day-bonus">Month End Boost</div>
+                    </div>
+                    <div class="calendar-day" data-day="29">
+                        <div class="day-number">29</div>
+                        <div class="day-bonus">Leap Day Special</div>
+                    </div>
+                    <div class="calendar-day" data-day="30">
+                        <div class="day-number">30</div>
+                        <div class="day-bonus">Final Countdown</div>
+                    </div>
+                    <div class="calendar-day" data-day="31">
+                        <div class="day-number">31</div>
+                        <div class="day-bonus">New Year Eve</div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button class="cta-button bg-casino-yellow text-casino-black px-8 py-4 text-xl font-black border-4 border-casino-black hover-transform" onclick="window.location.href='/register'">
+                        JOIN FOR DAILY BONUSES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- No Deposit Codes Section -->
+    <section class="py-20 px-4 bg-casino-black">
+        <div class="container mx-auto">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-black mb-8 text-shadow-3d text-casino-yellow">NO DEPOSIT PROMO CODES</h2>
+                
+                <div class="no-deposit-notice bg-casino-red border-4 border-casino-yellow p-8 mb-8">
+                    <div class="text-6xl mb-4"><i class="fas fa-exclamation-triangle text-casino-yellow"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">CURRENTLY UNAVAILABLE</h3>
+                    <p class="text-lg leading-relaxed">
+                        No deposit promo codes are not available for Swedish players at this moment due to local gambling regulations and licensing requirements. However, our massive 200% welcome bonus up to 15,000 kr provides exceptional value for your first deposit.
+                    </p>
+                </div>
+
+                <div class="alternative-offers grid md:grid-cols-2 gap-8">
+                    <div class="offer-card bg-casino-red border-4 border-casino-yellow p-6">
+                        <h4 class="text-xl font-bold text-casino-yellow mb-3">INSTEAD, ENJOY:</h4>
+                        <ul class="text-left space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-casino-yellow mr-3"></i>200% welcome bonus up to 15,000 kr</li>
+                            <li class="flex items-center"><i class="fas fa-check text-casino-yellow mr-3"></i>10% weekly cashback on all losses</li>
+                            <li class="flex items-center"><i class="fas fa-check text-casino-yellow mr-3"></i>Daily promotions calendar</li>
+                            <li class="flex items-center"><i class="fas fa-check text-casino-yellow mr-3"></i>VIP program with exclusive rewards</li>
+                        </ul>
+                    </div>
+                    <div class="offer-card bg-casino-red border-4 border-casino-yellow p-6">
+                        <h4 class="text-xl font-bold text-casino-yellow mb-3">MINIMUM DEPOSIT:</h4>
+                        <div class="text-4xl font-black text-casino-yellow mb-2">100 KR</div>
+                        <p class="text-sm">Start playing with just 100 kr and receive up to 300 kr bonus (200% match) plus weekly cashback benefits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wagering Requirements Article -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-black text-center mb-16 text-shadow-3d">WAGERING REQUIREMENTS EXPLAINED</h2>
+                
+                <div class="wagering-article space-y-8">
+                    <div class="article-section bg-casino-black border-4 border-casino-yellow p-8">
+                        <h3 class="text-2xl font-bold text-casino-yellow mb-4">WHAT ARE WAGERING REQUIREMENTS?</h3>
+                        <p class="text-lg leading-relaxed mb-4">
+                            Wagering requirements represent the number of times you must play through your bonus amount before you can withdraw any winnings. At Shakebet Casino, most bonuses carry a 35x wagering requirement, which is competitive within the Swedish gambling market.
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                            For example, if you receive a 1,000 kr bonus with 35x wagering, you must place bets totaling 35,000 kr (1,000 kr × 35) before you can withdraw bonus winnings. This requirement ensures fair play and prevents bonus abuse while still providing excellent value to genuine players.
+                        </p>
+                    </div>
+
+                    <div class="article-section bg-casino-black border-4 border-casino-yellow p-8">
+                        <h3 class="text-2xl font-bold text-casino-yellow mb-4">TIME LIMITS AND VALIDITY</h3>
+                        <p class="text-lg leading-relaxed mb-4">
+                            All bonus wagering requirements at Shakebet must be completed within 30 days of bonus activation. This generous timeframe allows players to enjoy their bonus funds without rushing through games or making impulsive betting decisions.
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                            If wagering requirements are not met within the 30-day period, any remaining bonus funds and associated winnings will be removed from your account. However, any deposits and winnings from deposit funds remain fully withdrawable at all times.
+                        </p>
+                    </div>
+
+                    <div class="article-section bg-casino-black border-4 border-casino-yellow p-8">
+                        <h3 class="text-2xl font-bold text-casino-yellow mb-4">FREE SPINS WAGERING RULES</h3>
+                        <p class="text-lg leading-relaxed mb-4">
+                            Free spins winnings are subject to specific wagering requirements and caps to ensure fair play. Standalone free spins (not part of a deposit bonus package) have winnings capped at 1,000 kr, regardless of the actual amount won during the free spins rounds.
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                            When free spins are included as part of a reload bonus package, the winnings cap increases to 10 times your deposit amount. For example, if you deposit 500 kr and receive free spins as part of a reload bonus, your free spins winnings are capped at 5,000 kr (500 kr × 10).
+                        </p>
+                    </div>
+
+                    <div class="wagering-calculator bg-casino-red border-4 border-casino-yellow p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-center">WAGERING CALCULATOR EXAMPLE</h3>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-xl font-bold text-casino-yellow mb-4">WELCOME BONUS EXAMPLE:</h4>
+                                <div class="calculation-steps space-y-3">
+                                    <div class="flex justify-between border-b border-casino-yellow pb-2">
+                                        <span>Deposit Amount:</span>
+                                        <span class="font-bold">5,000 kr</span>
+                                    </div>
+                                    <div class="flex justify-between border-b border-casino-yellow pb-2">
+                                        <span>Bonus (200%):</span>
+                                        <span class="font-bold">10,000 kr</span>
+                                    </div>
+                                    <div class="flex justify-between border-b border-casino-yellow pb-2">
+                                        <span>Wagering (35x):</span>
+                                        <span class="font-bold">350,000 kr</span>
+                                    </div>
+                                    <div class="flex justify-between text-casino-yellow font-bold text-lg">
+                                        <span>Total to Wager:</span>
+                                        <span>350,000 kr</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-casino-yellow mb-4">FREE SPINS EXAMPLE:</h4>
+                                <div class="calculation-steps space-y-3">
+                                    <div class="flex justify-between border-b border-casino-yellow pb-2">
+                                        <span>Free Spins Won:</span>
+                                        <span class="font-bold">2,500 kr</span>
+                                    </div>
+                                    <div class="flex justify-between border-b border-casino-yellow pb-2">
+                                        <span>Winnings Cap:</span>
+                                        <span class="font-bold">1,000 kr</span>
+                                    </div>
+                                    <div class="flex justify-between border-b border-casino-yellow pb-2">
+                                        <span>Wagering (35x):</span>
+                                        <span class="font-bold">35,000 kr</span>
+                                    </div>
+                                    <div class="flex justify-between text-casino-yellow font-bold text-lg">
+                                        <span>Max Withdrawal:</span>
+                                        <span>1,000 kr</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-4 bg-casino-black">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-black text-center mb-16 text-shadow-3d text-casino-yellow">PROMOTIONS FAQ</h2>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="faq-item bg-casino-red border-4 border-casino-yellow p-6">
+                    <h3 class="text-xl font-bold text-casino-yellow mb-3">Can I claim multiple bonuses at the same time?</h3>
+                    <p>No, only one bonus can be active at a time. You must complete the wagering requirements of your current bonus before claiming a new promotion. However, cashback bonuses run independently and can be claimed alongside other offers.</p>
+                </div>
+                <div class="faq-item bg-casino-red border-4 border-casino-yellow p-6">
+                    <h3 class="text-xl font-bold text-casino-yellow mb-3">Do all games contribute equally to wagering requirements?</h3>
+                    <p>Slots contribute 100% to wagering requirements, while table games like blackjack and roulette contribute 10%. Live dealer games contribute 20%. Video poker and some specialty games may have different contribution rates detailed in the full terms.</p>
+                </div>
+                <div class="faq-item bg-casino-red border-4 border-casino-yellow p-6">
+                    <h3 class="text-xl font-bold text-casino-yellow mb-3">What happens if I don't complete wagering within 30 days?</h3>
+                    <p>Any remaining bonus funds and winnings derived from bonus play will be removed from your account. However, your original deposit and any winnings from deposit funds remain fully withdrawable at all times.</p>
+                </div>
+                <div class="faq-item bg-casino-red border-4 border-casino-yellow p-6">
+                    <h3 class="text-xl font-bold text-casino-yellow mb-3">Are there maximum bet limits during bonus play?</h3>
+                    <p>Yes, the maximum bet per spin or hand during bonus play is 50 kr. Exceeding this limit may void your bonus and any associated winnings. This rule applies to all bonus types except cashback bonuses.</p>
+                </div>
+                <div class="faq-item bg-casino-red border-4 border-casino-yellow p-6">
+                    <h3 class="text-xl font-bold text-casino-yellow mb-3">How is the weekly cashback calculated?</h3>
+                    <p>Weekly cashback is calculated on net losses from Monday to Sunday and credited every Monday morning. The calculation includes all real money losses minus any winnings, with the 10% cashback applied to the final net loss amount.</p>
+                </div>
+                <div class="faq-item bg-casino-red border-4 border-casino-yellow p-6">
+                    <h3 class="text-xl font-bold text-casino-yellow mb-3">Can I withdraw my deposit while bonus is active?</h3>
+                    <p>Yes, you can withdraw your original deposit at any time. However, doing so will forfeit any active bonus funds and associated winnings. We recommend completing wagering requirements before making withdrawals for maximum value.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-black mb-8 text-shadow-3d">READY TO CLAIM YOUR BONUSES?</h2>
+                <p class="text-xl mb-12">Join thousands of Swedish players who are already enjoying explosive bonuses and daily rewards at Shakebet Casino.</p>
+                
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <button class="cta-button bg-casino-yellow text-casino-black px-12 py-6 text-2xl font-black border-4 border-casino-black hover-transform mega-pulse" onclick="window.location.href='/register'">
+                        CLAIM 200% BONUS
+                    </button>
+                    <div class="text-center">
+                        <div class="text-sm text-casino-yellow font-bold">TERMS APPLY</div>
+                        <div class="text-xs">35x wagering • 30 days validity • 21+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-casino-black border-t-4 border-casino-yellow py-12 px-4">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-black text-casino-yellow mb-4">SHAKEBET</h3>
+                    <p class="mb-4">This is informational site about Shakebet casino.</p>
+                    <div class="flex space-x-4">
+                        <i class="fab fa-facebook text-casino-yellow text-2xl hover:text-white cursor-pointer"></i>
+                        <i class="fab fa-twitter text-casino-yellow text-2xl hover:text-white cursor-pointer"></i>
+                        <i class="fab fa-instagram text-casino-yellow text-2xl hover:text-white cursor-pointer"></i>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-casino-yellow mb-4">QUICK LINKS</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="hover:text-casino-yellow">Home</a></li>
+                        <li><a href="/slots" class="hover:text-casino-yellow">Games</a></li>
+                        <li><a href="/promotions" class="hover:text-casino-yellow">Bonuses</a></li>
+                        <li><a href="#about" class="hover:text-casino-yellow">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-casino-yellow mb-4">SUPPORT</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-casino-yellow">Live Chat</a></li>
+                        <li><a href="#" class="hover:text-casino-yellow">Email Support</a></li>
+                        <li><a href="#" class="hover:text-casino-yellow">FAQ</a></li>
+                        <li><a href="#" class="hover:text-casino-yellow">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-casino-yellow mb-4">RESPONSIBLE GAMING</h4>
+                    <div class="text-2xl text-casino-yellow mb-2"><i class="fas fa-exclamation-triangle"></i></div>
+                    <p class="text-sm mb-2">Gambling can be addictive. Play responsibly.</p>
+                    <p class="text-sm">Stödlinjen: 020-819 100</p>
+                </div>
+            </div>
+            
+            <div class="border-t-2 border-casino-yellow pt-8 text-center text-sm">
+                <p class="mb-4">Gambling can be addictive. Play responsibly. Consult if gambling is legal in your region. 21+</p>
+                <p>&copy; 2025 Shakebet Casino. Licensed by Anjouan Gaming Authority. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Calendar day hover effects
+        document.querySelectorAll('.calendar-day').forEach(day => {
+            day.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.1) rotateZ(5deg)';
+            });
+            
+            day.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1) rotateZ(0deg)';
+            });
+        });
+
+        // Promotions table row hover effects
+        document.querySelectorAll('.promo-row').forEach(row => {
+            row.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = '#fff201';
+                this.style.color = '#0a0a0a';
+                this.querySelectorAll('.text-casino-yellow').forEach(el => {
+                    el.style.color = '#fe2a18';
+                });
+            });
+            
+            row.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = '';
+                this.style.color = '';
+                this.querySelectorAll('.text-casino-yellow').forEach(el => {
+                    el.style.color = '';
+                });
+            });
+        });
+
+        // Register button functionality
+        function redirectToRegister() {
+            window.location.href = '/register';
+        }
+
+        // Add click handlers to all CTA buttons
+        document.querySelectorAll('.cta-button').forEach(button => {
+            if (!button.onclick) {
+                button.onclick = redirectToRegister;
+            }
+        });
+    </script>
+</body>
+</html>

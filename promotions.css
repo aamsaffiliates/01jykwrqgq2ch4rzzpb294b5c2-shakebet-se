@@ -1,0 +1,422 @@
+/* Promotions Page Specific Styles */
+
+/* Welcome Bonus Hero */
+.welcome-bonus-hero {
+    position: relative;
+    animation: mega-glow 3s infinite;
+}
+
+.bonus-spotlight {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 242, 1, 0.1), transparent);
+    animation: spotlight-sweep 4s infinite;
+}
+
+@keyframes mega-glow {
+    0%, 100% {
+        box-shadow: 0 0 30px #fff201;
+    }
+    50% {
+        box-shadow: 0 0 60px #fff201, 0 0 90px #fff201;
+    }
+}
+
+@keyframes spotlight-sweep {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.pulse-glow {
+    animation: pulse-glow-text 2s infinite;
+}
+
+@keyframes pulse-glow-text {
+    0%, 100% {
+        text-shadow: 
+            2px 2px 0px #000,
+            4px 4px 0px #333,
+            6px 6px 0px #666,
+            0 0 20px #fff201;
+    }
+    50% {
+        text-shadow: 
+            2px 2px 0px #000,
+            4px 4px 0px #333,
+            6px 6px 0px #666,
+            0 0 40px #fff201,
+            0 0 60px #fff201;
+    }
+}
+
+.mega-pulse {
+    animation: mega-pulse-button 1.5s infinite;
+}
+
+@keyframes mega-pulse-button {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(255, 242, 1, 0.5);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 40px rgba(255, 242, 1, 0.8);
+    }
+}
+
+/* Promotions Table */
+.promotions-table {
+    animation: table-entrance 1s ease-out;
+}
+
+@keyframes table-entrance {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.promo-row {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.promo-row:hover {
+    transform: translateX(10px);
+    box-shadow: -10px 0 30px rgba(255, 242, 1, 0.3);
+}
+
+.featured-row {
+    background: linear-gradient(45deg, #fe2a18, #ff4a38);
+    animation: featured-glow 2s infinite;
+}
+
+@keyframes featured-glow {
+    0%, 100% {
+        box-shadow: inset 0 0 20px rgba(255, 242, 1, 0.3);
+    }
+    50% {
+        box-shadow: inset 0 0 40px rgba(255, 242, 1, 0.5);
+    }
+}
+
+/* Calendar Styles */
+.calendar-header {
+    background: #fff201;
+    color: #0a0a0a;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #0a0a0a;
+}
+
+.calendar-day {
+    background: #0a0a0a;
+    border: 2px solid #fff201;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.calendar-day::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 242, 1, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.calendar-day:hover::before {
+    left: 100%;
+}
+
+.calendar-day:hover {
+    background: #fff201;
+    color: #0a0a0a;
+    transform: scale(1.05) rotateZ(2deg);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.day-number {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.day-bonus {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.calendar-intro {
+    animation: intro-slide 1s ease-out;
+}
+
+@keyframes intro-slide {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* No Deposit Section */
+.no-deposit-notice {
+    animation: warning-pulse 2s infinite;
+    position: relative;
+}
+
+@keyframes warning-pulse {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(255, 242, 1, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(255, 242, 1, 0.6);
+    }
+}
+
+.offer-card {
+    transition: all 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-10px) rotateY(5deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Wagering Article */
+.article-section {
+    animation: section-fade-in 0.8s ease-out;
+    transition: all 0.3s ease;
+}
+
+.article-section:nth-child(1) { animation-delay: 0.1s; }
+.article-section:nth-child(2) { animation-delay: 0.2s; }
+.article-section:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes section-fade-in {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.article-section:hover {
+    transform: translateX(10px);
+    box-shadow: -5px 0 20px rgba(255, 242, 1, 0.2);
+}
+
+.wagering-calculator {
+    animation: calculator-bounce 1s ease-out;
+}
+
+@keyframes calculator-bounce {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.calculation-steps {
+    animation: steps-cascade 1s ease-out;
+}
+
+@keyframes steps-cascade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FAQ Enhancements */
+.faq-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 242, 1, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.faq-item:hover::before {
+    left: 100%;
+}
+
+.faq-item:hover {
+    transform: translateX(15px);
+    box-shadow: -10px 0 25px rgba(255, 242, 1, 0.3);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .welcome-bonus-hero {
+        padding: 24px;
+    }
+    
+    .welcome-bonus-hero .text-6xl {
+        font-size: 3rem;
+    }
+    
+    .promotions-table {
+        font-size: 14px;
+    }
+    
+    .promotions-table th,
+    .promotions-table td {
+        padding: 8px 4px;
+    }
+    
+    .calendar-day {
+        min-height: 60px;
+        padding: 4px;
+    }
+    
+    .day-number {
+        font-size: 14px;
+    }
+    
+    .day-bonus {
+        font-size: 8px;
+    }
+    
+    .article-section {
+        padding: 16px;
+    }
+    
+    .wagering-calculator {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .promotions-table {
+        font-size: 12px;
+    }
+    
+    .calendar-day {
+        min-height: 50px;
+        padding: 2px;
+    }
+    
+    .day-number {
+        font-size: 12px;
+    }
+    
+    .day-bonus {
+        font-size: 7px;
+    }
+    
+    .mega-pulse {
+        animation: none;
+    }
+    
+    .floating-elements {
+        display: none;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .floating-elements,
+    .cta-button,
+    .bonus-spotlight {
+        display: none;
+    }
+    
+    .promotions-table,
+    .calendar-day,
+    .article-section {
+        break-inside: avoid;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .bg-casino-black {
+        background: white !important;
+        border-color: black !important;
+    }
+    
+    .text-casino-yellow {
+        color: black !important;
+    }
+}
+
+/* Accessibility Enhancements */
+@media (prefers-reduced-motion: reduce) {
+    .mega-pulse,
+    .pulse-glow,
+    .bonus-spotlight,
+    .floating-elements * {
+        animation: none;
+    }
+    
+    .hover-transform:hover,
+    .calendar-day:hover,
+    .promo-row:hover {
+        transform: none;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .calendar-day,
+    .article-section,
+    .faq-item {
+        border-width: 4px;
+    }
+    
+    .cta-button {
+        border-width: 6px;
+    }
+}

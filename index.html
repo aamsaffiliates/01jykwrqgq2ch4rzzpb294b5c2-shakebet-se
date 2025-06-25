@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakebet Casino - 200% Bonus up to 15,000 kr + 10% Weekly Cashback | Sweden's Premier Gaming Destination</title>
+    <meta name="description" content="Join Shakebet Casino Sweden and claim your massive 200% welcome bonus up to 15,000 kr plus 10% weekly cashback. Play premium slots, live dealer games, and exclusive Swedish favorites with secure payments and 24/7 support.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Shakebet Casino - 200% Bonus up to 15,000 kr | Sweden's Premier Gaming Site">
+    <meta property="og:description" content="Claim your massive welcome bonus and enjoy premium casino games with weekly cashback at Sweden's most trusted gaming destination.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shakebet.se">
+    <meta property="og:site_name" content="Shakebet Casino">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'casino-red': '#fe2a18',
+                        'casino-black': '#0a0a0a',
+                        'casino-yellow': '#fff201',
+                        'casino-white': '#ffffff'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-casino-red text-casino-white overflow-x-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-star star-1"><i class="fas fa-star"></i></div>
+        <div class="floating-star star-2"><i class="fas fa-coins"></i></div>
+        <div class="floating-star star-3"><i class="fas fa-gem"></i></div>
+        <div class="floating-star star-4"><i class="fas fa-dice"></i></div>
+        <div class="floating-explosion explosion-1">💥</div>
+        <div class="floating-explosion explosion-2">⚡</div>
+        <div class="floating-explosion explosion-3">💫</div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-casino-black mx-4 mt-4 border-4 border-casino-yellow header-float">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="/">
+                <img src="src/logo.png" class="h-24 -my-6" alt="shakebet logo" />
+            </a>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="/" class="nav-link font-bold hover:text-casino-yellow transition-colors">HOME</a></li>
+                <li><a href="/slots" class="nav-link font-bold hover:text-casino-yellow transition-colors">GAMES</a></li>
+                <li><a href="/promotions" class="nav-link font-bold hover:text-casino-yellow transition-colors">BONUSES</a></li>
+                <li><a href="#about" class="nav-link font-bold hover:text-casino-yellow transition-colors">ABOUT</a></li>
+                <li><a href="#support" class="nav-link font-bold hover:text-casino-yellow transition-colors">SUPPORT</a></li>
+            </ul>
+            <button class="cta-button bg-casino-yellow text-casino-black px-6 py-3 font-black border-4 border-casino-black hover-transform" onclick="window.location.href='/register'">
+                JOIN NOW
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="mt-24 min-h-screen flex items-center justify-center pt-24 px-4">
+        <div class="container mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div class="text-center lg:text-left space-y-8">
+                <!-- Bonus Display Box -->
+                <div class="!w-full bg-casino-black border-4 border-casino-yellow p-8 inline-block animate-pulse-glow">
+                    <div class="text-6xl font-black text-casino-yellow text-shadow-3d mb-2">200%</div>
+                    <div class="text-2xl font-bold">UP TO 15,000 KR</div>
+                    <div class="text-lg text-casino-yellow font-bold mt-2">+ 10% WEEKLY CASHBACK</div>
+                </div>
+
+                <!-- Main Title -->
+                <h1 class="text-5xl lg:text-7xl font-black text-shadow-3d leading-tight">
+                    SHAKEBET CASINO<br>
+                    <span class="text-casino-yellow">EXPLOSIVE WINS</span>
+                </h1>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <button class="cta-button bg-casino-yellow text-casino-black px-8 py-4 text-xl font-black border-4 border-casino-black hover-transform" onclick="window.location.href='/register'">
+                        CLAIM BONUS
+                    </button>
+                    <button class="cta-button bg-transparent text-casino-white px-8 py-4 text-xl font-black border-4 border-casino-white hover-transform" onclick="window.location.href='/register'">
+                        PLAY NOW
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="relative">
+                <img src="src/shakebet-banner.png" alt="Shakebet Casino Games" class="w-full h-auto border-4 border-casino-yellow parallax-element">
+                <div class="absolute inset-0 bg-gradient-to-t from-casino-red/20 to-transparent"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Claim Bonus -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-black text-center mb-16 text-shadow-3d">HOW TO CLAIM YOUR BONUS</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="step-card bg-casino-black border-4 border-casino-yellow p-8 text-center hover-lift">
+                    <div class="text-4xl text-casino-yellow mb-4 pulse-icon"><i class="fas fa-user-plus"></i></div>
+                    <h3 class="text-xl font-bold mb-2">STEP 1</h3>
+                    <p class="font-semibold">Register your account with valid Swedish details</p>
+                </div>
+                <div class="step-card bg-casino-black border-4 border-casino-yellow p-8 text-center hover-lift">
+                    <div class="text-4xl text-casino-yellow mb-4 pulse-icon"><i class="fas fa-credit-card"></i></div>
+                    <h3 class="text-xl font-bold mb-2">STEP 2</h3>
+                    <p class="font-semibold">Make your first deposit using Swish or Trustly</p>
+                </div>
+                <div class="step-card bg-casino-black border-4 border-casino-yellow p-8 text-center hover-lift">
+                    <div class="text-4xl text-casino-yellow mb-4 pulse-icon"><i class="fas fa-gift"></i></div>
+                    <h3 class="text-xl font-bold mb-2">STEP 3</h3>
+                    <p class="font-semibold">Bonus automatically credited to your account</p>
+                </div>
+                <div class="step-card bg-casino-black border-4 border-casino-yellow p-8 text-center hover-lift">
+                    <div class="text-4xl text-casino-yellow mb-4 pulse-icon"><i class="fas fa-play"></i></div>
+                    <h3 class="text-xl font-bold mb-2">STEP 4</h3>
+                    <p class="font-semibold">Start playing and winning big jackpots</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gringo's Picks -->
+    <section id="games" class="py-20 px-4 bg-casino-black">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-black text-center mb-16 text-shadow-3d text-casino-yellow">SHAKING PICKS</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div class="game-card group cursor-pointer hover-lift">
+                    <div class="relative overflow-hidden border-4 border-casino-yellow">
+                        <img src="src/book-of-ra" alt="Book of Ra" class="w-full h-60 object-cover">
+                        <div class="game-overlay absolute inset-0 bg-casino-red/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="cta-button bg-casino-yellow text-casino-black px-4 py-2 font-bold border-2 border-casino-black" onclick="window.location.href='/register'">PLAY</button>
+                        </div>
+                    </div>
+                    <h3 class="text-center font-bold mt-2">Book of Ra</h3>
+                </div>
+                <div class="game-card group cursor-pointer hover-lift">
+                    <div class="relative overflow-hidden border-4 border-casino-yellow">
+                        <img src="src/candyland.jpg" alt="Candyland" class="w-full h-60 object-cover">
+                        <div class="game-overlay absolute inset-0 bg-casino-red/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="cta-button bg-casino-yellow text-casino-black px-4 py-2 font-bold border-2 border-casino-black" onclick="window.location.href='/register'">PLAY</button>
+                        </div>
+                    </div>
+                    <h3 class="text-center font-bold mt-2">Candyland</h3>
+                </div>
+                <div class="game-card group cursor-pointer hover-lift">
+                    <div class="relative overflow-hidden border-4 border-casino-yellow">
+                        <img src="src/sizzling-hot.jpg" alt="7 Sizling Hot" class="w-full h-60 object-cover">
+                        <div class="game-overlay absolute inset-0 bg-casino-red/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="cta-button bg-casino-yellow text-casino-black px-4 py-2 font-bold border-2 border-casino-black" onclick="window.location.href='/register'">PLAY</button>
+                        </div>
+                    </div>
+                    <h3 class="text-center font-bold mt-2">7 Sizling Hot</h3>
+                </div>
+                <div class="game-card group cursor-pointer hover-lift">
+                    <div class="relative overflow-hidden border-4 border-casino-yellow">
+                        <img src="src/desert-temple.jpg" alt="Desert Temple" class="w-full h-60 object-cover">
+                        <div class="game-overlay absolute inset-0 bg-casino-red/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="cta-button bg-casino-yellow text-casino-black px-4 py-2 font-bold border-2 border-casino-black" onclick="window.location.href='/register'">PLAY</button>
+                        </div>
+                    </div>
+                    <h3 class="text-center font-bold mt-2">Desert Temple</h3>
+                </div>
+                <div class="game-card group cursor-pointer hover-lift">
+                    <div class="relative overflow-hidden border-4 border-casino-yellow">
+                        <img src="src/le-bandit.jpg" alt="Le Bandit" class="w-full h-60 object-cover">
+                        <div class="game-overlay absolute inset-0 bg-casino-red/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="cta-button bg-casino-yellow text-casino-black px-4 py-2 font-bold border-2 border-casino-black" onclick="window.location.href='/register'">PLAY</button>
+                        </div>
+                    </div>
+                    <h3 class="text-center font-bold mt-2">Le Bandit</h3>
+                </div>
+                <div class="game-card group cursor-pointer hover-lift">
+                    <div class="relative overflow-hidden border-4 border-casino-yellow">
+                        <img src="src/legacy-of-gods.jpg" alt="Legacy of the Gods" class="w-full h-60 object-cover">
+                        <div class="game-overlay absolute inset-0 bg-casino-red/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="cta-button bg-casino-yellow text-casino-black px-4 py-2 font-bold border-2 border-casino-black" onclick="window.location.href='/register'">PLAY</button>
+                        </div>
+                    </div>
+                    <h3 class="text-center font-bold mt-2">Legacy of the Gods</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Portfolio -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-black text-center mb-16 text-shadow-3d">GAME PORTFOLIO</h2>
+            <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="portfolio-card bg-casino-black border-4 border-casino-yellow p-6 text-center hover-lift">
+                    <div class="text-3xl text-casino-yellow mb-2"><i class="fas fa-bolt"></i></div>
+                    <div class="text-2xl font-black text-casino-yellow">247</div>
+                    <div class="font-bold">Megaways Slots</div>
+                </div>
+                <div class="portfolio-card bg-casino-black border-4 border-casino-yellow p-6 text-center hover-lift">
+                    <div class="text-3xl text-casino-yellow mb-2"><i class="fas fa-gem"></i></div>
+                    <div class="text-2xl font-black text-casino-yellow">156</div>
+                    <div class="font-bold">Cluster Pays</div>
+                </div>
+                <div class="portfolio-card bg-casino-black border-4 border-casino-yellow p-6 text-center hover-lift">
+                    <div class="text-3xl text-casino-yellow mb-2"><i class="fas fa-spade"></i></div>
+                    <div class="text-2xl font-black text-casino-yellow">89</div>
+                    <div class="font-bold">Table Games</div>
+                </div>
+                <div class="portfolio-card bg-casino-black border-4 border-casino-yellow p-6 text-center hover-lift">
+                    <div class="text-3xl text-casino-yellow mb-2"><i class="fas fa-rocket"></i></div>
+                    <div class="text-2xl font-black text-casino-yellow">34</div>
+                    <div class="font-bold">Crash Games</div>
+                </div>
+                <div class="portfolio-card bg-casino-black border-4 border-casino-yellow p-6 text-center hover-lift">
+                    <div class="text-3xl text-casino-yellow mb-2"><i class="fas fa-video"></i></div>
+                    <div class="text-2xl font-black text-casino-yellow">127</div>
+                    <div class="font-bold">Live Dealer</div>
+                </div>
+                <div class="portfolio-card bg-casino-black border-4 border-casino-yellow p-6 text-center hover-lift">
+                    <div class="text-3xl text-casino-yellow mb-2"><i class="fas fa-trophy"></i></div>
+                    <div class="text-2xl font-black text-casino-yellow">67</div>
+                    <div class="font-bold">Jackpots</div>
+                </div>
+                <div class="portfolio-card bg-casino-black border-4 border-casino-yellow p-6 text-center hover-lift">
+                    <div class="text-3xl text-casino-yellow mb-2"><i class="fas fa-crown"></i></div>
+                    <div class="text-2xl font-black text-casino-yellow">92</div>
+                    <div class="font-bold">Sweden Exclusive</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 bg-casino-black">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-black text-center mb-16 text-shadow-3d text-casino-yellow">ABOUT SHAKEBET CASINO</h2>
+            <div class="max-w-4xl mx-auto text-lg leading-relaxed">
+                <p class="mb-6">Shakebet Casino stands as Sweden's premier gaming destination, delivering explosive entertainment and massive winning opportunities to Swedish players since its launch. Licensed under Anjouan Gaming Authority, the platform combines cutting-edge technology with traditional casino excitement, creating an unmatched gaming experience that keeps players coming back for more thrills.</p>
+                
+                <p class="mb-6">The casino features an extensive portfolio of over 800 premium games from industry-leading providers, including exclusive Swedish-themed slots, progressive jackpots worth millions of kronor, and live dealer tables hosted by professional Swedish-speaking croupiers. Players can enjoy everything from classic fruit machines to modern video slots with innovative mechanics like Megaways, Cluster Pays, and cascading reels.</p>
+                
+                <p class="mb-6">What sets Shakebet apart is its commitment to Swedish players' preferences and gaming culture. The platform offers localized payment methods including Swish, Trustly, and major Swedish banks, ensuring seamless deposits and lightning-fast withdrawals. Customer support operates 24/7 with native Swedish speakers who understand local gaming regulations and player needs.</p>
+                
+                <p class="mb-6">Security remains paramount at Shakebet Casino, with advanced SSL encryption protecting all transactions and personal data. The platform employs responsible gaming tools including deposit limits, session timers, and self-exclusion options, working closely with Swedish gambling addiction support organizations to promote safe gaming practices among all players.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Providers -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-black text-center mb-16 text-shadow-3d">GAME PROVIDERS</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <div class="provider-card bg-casino-black border-4 border-casino-yellow p-4 text-center font-bold hover-lift">NetEnt</div>
+                <div class="provider-card bg-casino-black border-4 border-casino-yellow p-4 text-center font-bold hover-lift">Microgaming</div>
+                <div class="provider-card bg-casino-black border-4 border-casino-yellow p-4 text-center font-bold hover-lift">Play'n GO</div>
+                <div class="provider-card bg-casino-black border-4 border-casino-yellow p-4 text-center font-bold hover-lift">Pragmatic Play</div>
+                <div class="provider-card bg-casino-black border-4 border-casino-yellow p-4 text-center font-bold hover-lift">Evolution Gaming</div>
+                <div class="provider-card bg-casino-black border-4 border-casino-yellow p-4 text-center font-bold hover-lift">Big Time Gaming</div>
+                <div class="provider-card bg-casino-black border-4 border-casino-yellow p-4 text-center font-bold hover-lift">Yggdrasil</div>
+                <div class="provider-card bg-casino-black border-4 border-casino-yellow p-4 text-center font-bold hover-lift">Quickspin</div>
+                <div class="provider-card bg-casino-black border-4 border-casino-yellow p-4 text-center font-bold hover-lift">Red Tiger</div>
+                <div class="provider-card bg-casino-black border-4 border-casino-yellow p-4 text-center font-bold hover-lift">Push Gaming</div>
+                <div class="provider-card bg-casino-black border-4 border-casino-yellow p-4 text-center font-bold hover-lift">Thunderkick</div>
+                <div class="provider-card bg-casino-black border-4 border-casino-yellow p-4 text-center font-bold hover-lift">ELK Studios</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="py-20 px-4 bg-casino-black">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-black text-center mb-16 text-shadow-3d text-casino-yellow">PAYMENT METHODS</h2>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <table class="w-full border-4 border-casino-yellow">
+                        <thead class="bg-casino-yellow text-casino-black">
+                            <tr>
+                                <th class="p-4 font-black">METHOD</th>
+                                <th class="p-4 font-black">DEPOSIT TIME</th>
+                                <th class="p-4 font-black">WITHDRAWAL TIME</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <tr class="border-b-2 border-casino-yellow">
+                                <td class="p-4 font-bold">Swish</td>
+                                <td class="p-4">Instant</td>
+                                <td class="p-4">1-2 hours</td>
+                            </tr>
+                            <tr class="border-b-2 border-casino-yellow">
+                                <td class="p-4 font-bold">Trustly</td>
+                                <td class="p-4">Instant</td>
+                                <td class="p-4">1-3 hours</td>
+                            </tr>
+                            <tr class="border-b-2 border-casino-yellow">
+                                <td class="p-4 font-bold">Bank Transfer</td>
+                                <td class="p-4">1-3 days</td>
+                                <td class="p-4">3-5 days</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-bold">Visa/Mastercard</td>
+                                <td class="p-4">Instant</td>
+                                <td class="p-4">3-5 days</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <p class="text-lg leading-relaxed mb-6">Shakebet Casino prioritizes Swedish players with localized payment solutions that match local banking preferences. Swish integration allows instant deposits and rapid withdrawals, making it the preferred choice for Swedish gamblers who value speed and convenience in their gaming transactions.</p>
+                    
+                    <p class="text-lg leading-relaxed mb-6">Trustly provides secure bank-to-bank transfers without requiring card details, offering an additional layer of security for privacy-conscious players. All transactions are processed through encrypted channels with advanced fraud protection systems monitoring every deposit and withdrawal for suspicious activity.</p>
+                    
+                    <p class="text-lg leading-relaxed">The casino maintains partnerships with major Swedish banks including Swedbank, Handelsbanken, SEB, and Nordea, ensuring seamless integration with existing banking relationships. Minimum deposits start at 100 kr, while withdrawal limits accommodate both casual players and high-rollers with limits up to 100,000 kr per transaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIP Program -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-black text-center mb-16 text-shadow-3d">VIP PROGRAM LEVELS</h2>
+            <div class="grid md:grid-cols-4 gap-6 mb-12">
+                <div class="vip-card bg-casino-black border-4 border-gray-400 p-6 text-center hover-lift">
+                    <div class="text-3xl mb-4"><i class="fas fa-medal text-gray-400"></i></div>
+                    <h3 class="text-xl font-bold mb-2">BRONZE</h3>
+                    <p class="font-semibold">5% Weekly Cashback</p>
+                </div>
+                <div class="vip-card bg-casino-black border-4 border-gray-300 p-6 text-center hover-lift">
+                    <div class="text-3xl mb-4"><i class="fas fa-medal text-gray-300"></i></div>
+                    <h3 class="text-xl font-bold mb-2">SILVER</h3>
+                    <p class="font-semibold">7% Weekly Cashback</p>
+                </div>
+                <div class="vip-card bg-casino-black border-4 border-casino-yellow p-6 text-center hover-lift">
+                    <div class="text-3xl mb-4"><i class="fas fa-medal text-casino-yellow"></i></div>
+                    <h3 class="text-xl font-bold mb-2">GOLD</h3>
+                    <p class="font-semibold">10% Weekly Cashback</p>
+                </div>
+                <div class="vip-card bg-casino-black border-4 border-purple-400 p-6 text-center hover-lift">
+                    <div class="text-3xl mb-4"><i class="fas fa-crown text-purple-400"></i></div>
+                    <h3 class="text-xl font-bold mb-2">DIAMOND</h3>
+                    <p class="font-semibold">15% Weekly Cashback</p>
+                </div>
+            </div>
+            <div class="max-w-4xl mx-auto text-lg leading-relaxed">
+                <p class="mb-6">The Shakebet VIP program rewards loyal Swedish players with escalating benefits based on their gaming activity and deposit history. Each level unlocks enhanced cashback percentages, exclusive bonuses, and personalized account management services designed to maximize the gaming experience for dedicated players.</p>
+                
+                <p class="mb-6">Bronze level members enjoy 5% weekly cashback on net losses, calculated every Monday and credited automatically to player accounts. Silver level increases this to 7% while adding priority customer support and faster withdrawal processing times. Gold members receive 10% cashback plus exclusive tournament invitations and birthday bonuses.</p>
+                
+                <p class="mb-6">Diamond VIP status represents the pinnacle of Shakebet membership, offering 15% weekly cashback, dedicated Swedish-speaking account managers, and access to exclusive high-limit tables. Diamond members also receive personalized bonus offers, luxury gifts, and invitations to exclusive events in Stockholm and Gothenburg.</p>
+                
+                <p>Progression through VIP levels is automatic based on cumulative deposits and gaming activity over rolling 30-day periods. The program includes level protection features ensuring players maintain their status even during temporary breaks from gaming, demonstrating Shakebet's commitment to long-term player relationships.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonuses Review -->
+    <section id="bonuses" class="py-20 px-4 bg-casino-black">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-black text-center mb-16 text-shadow-3d text-casino-yellow">BONUSES REVIEW</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="text-lg leading-relaxed mb-8">
+                    <p class="mb-6">Shakebet Casino's bonus structure is designed to provide maximum value to Swedish players while maintaining fair and transparent terms. The flagship 200% welcome bonus up to 15,000 kr represents one of the most generous offers in the Swedish market, allowing new players to triple their initial deposit and extend their gaming sessions significantly.</p>
+                    
+                    <p class="mb-6">The welcome package includes not only the deposit match bonus but also 10% weekly cashback calculated on net losses, providing ongoing value beyond the initial promotion. This combination ensures players receive both immediate bonus funds and long-term rewards for their continued loyalty to the platform.</p>
+                    
+                    <p class="mb-6">Weekly promotions rotate regularly, featuring reload bonuses, free spin packages, and tournament entries. Swedish players particularly appreciate the Thursday "Torsdag Boost" offering 50% deposit bonuses up to 2,500 kr, and the weekend "Helg Spins" providing up to 200 free spins on popular Nordic-themed slots.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-casino-yellow mb-4">WELCOME BONUS FEATURES:</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-casino-yellow mr-3"></i>200% match up to 15,000 kr</li>
+                            <li class="flex items-center"><i class="fas fa-check text-casino-yellow mr-3"></i>10% weekly cashback included</li>
+                            <li class="flex items-center"><i class="fas fa-check text-casino-yellow mr-3"></i>35x wagering requirement</li>
+                            <li class="flex items-center"><i class="fas fa-check text-casino-yellow mr-3"></i>Valid for 30 days</li>
+                            <li class="flex items-center"><i class="fas fa-check text-casino-yellow mr-3"></i>All slots contribute 100%</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-casino-yellow mb-4">ONGOING PROMOTIONS:</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><i class="fas fa-star text-casino-yellow mr-3"></i>Monday Reload: 75% up to 3,000 kr</li>
+                            <li class="flex items-center"><i class="fas fa-star text-casino-yellow mr-3"></i>Thursday Boost: 50% up to 2,500 kr</li>
+                            <li class="flex items-center"><i class="fas fa-star text-casino-yellow mr-3"></i>Weekend Spins: Up to 200 free spins</li>
+                            <li class="flex items-center"><i class="fas fa-star text-casino-yellow mr-3"></i>Monthly Tournaments: 50,000 kr prize pools</li>
+                            <li class="flex items-center"><i class="fas fa-star text-casino-yellow mr-3"></i>Birthday Bonus: 100% up to 5,000 kr</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <table class="w-full border-4 border-casino-yellow mb-8">
+                    <thead class="bg-casino-yellow text-casino-black">
+                        <tr>
+                            <th class="p-4 font-black">BONUS TYPE</th>
+                            <th class="p-4 font-black">AMOUNT</th>
+                            <th class="p-4 font-black">WAGERING</th>
+                            <th class="p-4 font-black">VALIDITY</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center">
+                        <tr class="border-b-2 border-casino-yellow">
+                            <td class="p-4 font-bold">Welcome Bonus</td>
+                            <td class="p-4">200% up to 15,000 kr</td>
+                            <td class="p-4">35x</td>
+                            <td class="p-4">30 days</td>
+                        </tr>
+                        <tr class="border-b-2 border-casino-yellow">
+                            <td class="p-4 font-bold">Weekly Cashback</td>
+                            <td class="p-4">10% of losses</td>
+                            <td class="p-4">1x</td>
+                            <td class="p-4">7 days</td>
+                        </tr>
+                        <tr class="border-b-2 border-casino-yellow">
+                            <td class="p-4 font-bold">Reload Bonus</td>
+                            <td class="p-4">75% up to 3,000 kr</td>
+                            <td class="p-4">30x</td>
+                            <td class="p-4">14 days</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold">Free Spins</td>
+                            <td class="p-4">Up to 200 spins</td>
+                            <td class="p-4">25x winnings</td>
+                            <td class="p-4">7 days</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="bg-casino-red border-4 border-casino-yellow p-6">
+                    <p class="font-bold text-center"><i class="fas fa-exclamation-triangle text-casino-yellow mr-2"></i>WAGERING REQUIREMENTS APPLY. MINIMUM DEPOSIT 100 KR. MAXIMUM BET 50 KR DURING BONUS PLAY. FULL TERMS AND CONDITIONS APPLY.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Support -->
+    <section id="support" class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-black text-center mb-16 text-shadow-3d">CUSTOMER SUPPORT</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="support-card bg-casino-black border-4 border-casino-yellow p-8 text-center hover-lift">
+                    <div class="text-4xl text-casino-yellow mb-4"><i class="fas fa-comments"></i></div>
+                    <h3 class="text-xl font-bold mb-4">LIVE CHAT</h3>
+                    <p class="mb-4">24/7 instant support in Swedish and English</p>
+                    <button class="cta-button bg-casino-yellow text-casino-black px-6 py-2 font-bold border-2 border-casino-black hover-transform">START CHAT</button>
+                </div>
+                <div class="support-card bg-casino-black border-4 border-casino-yellow p-8 text-center hover-lift">
+                    <div class="text-4xl text-casino-yellow mb-4"><i class="fas fa-envelope"></i></div>
+                    <h3 class="text-xl font-bold mb-4">EMAIL SUPPORT</h3>
+                    <p class="mb-4">support@shakebet.se<br>Response within 2 hours</p>
+                    <button class="cta-button bg-casino-yellow text-casino-black px-6 py-2 font-bold border-2 border-casino-black hover-transform">SEND EMAIL</button>
+                </div>
+                <div class="support-card bg-casino-black border-4 border-casino-yellow p-8 text-center hover-lift">
+                    <div class="text-4xl text-casino-yellow mb-4"><i class="fas fa-phone"></i></div>
+                    <h3 class="text-xl font-bold mb-4">PHONE SUPPORT</h3>
+                    <p class="mb-4">+46 8 123 456 78<br>Daily 10:00 - 22:00 CET</p>
+                    <button class="cta-button bg-casino-yellow text-casino-black px-6 py-2 font-bold border-2 border-casino-black hover-transform">CALL NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Promotions -->
+    <section class="py-20 px-4 bg-casino-black">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-black text-center mb-16 text-shadow-3d text-casino-yellow">OTHER PROMOTIONS</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="promo-card bg-casino-red border-4 border-casino-yellow p-8 hover-lift">
+                    <h3 class="text-2xl font-bold mb-4">TOURNAMENT TUESDAYS</h3>
+                    <p class="mb-4">Compete against other Swedish players in weekly slot tournaments with 25,000 kr prize pools. Entry fee only 50 kr with guaranteed prizes for top 50 finishers.</p>
+                    <button class="cta-button bg-casino-yellow text-casino-black px-6 py-2 font-bold border-2 border-casino-black hover-transform" onclick="window.location.href='/register'">JOIN TOURNAMENT</button>
+                </div>
+                <div class="promo-card bg-casino-red border-4 border-casino-yellow p-8 hover-lift">
+                    <h3 class="text-2xl font-bold mb-4">FRIDAY FRENZY</h3>
+                    <p class="mb-4">Every Friday brings double loyalty points and exclusive access to new game releases. Plus, enjoy 25% cashback on all live dealer games from 18:00 to 24:00 CET.</p>
+                    <button class="cta-button bg-casino-yellow text-casino-black px-6 py-2 font-bold border-2 border-casino-black hover-transform" onclick="window.location.href='/register'">CLAIM OFFER</button>
+                </div>
+                <div class="promo-card bg-casino-red border-4 border-casino-yellow p-8 hover-lift">
+                    <h3 class="text-2xl font-bold mb-4">SUNDAY SURPRISE</h3>
+                    <p class="mb-4">Mystery bonuses every Sunday ranging from free spins to deposit matches. Check your account each Sunday morning for personalized surprise offers worth up to 5,000 kr.</p>
+                    <button class="cta-button bg-casino-yellow text-casino-black px-6 py-2 font-bold border-2 border-casino-black hover-transform" onclick="window.location.href='/register'">GET SURPRISE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Features -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 mb-16">
+                <div class="space-y-6">
+                    <h2 class="text-4xl font-black text-shadow-3d text-casino-yellow">SPORTSBOOK</h2>
+                    <p class="text-lg leading-relaxed">Expand your gaming experience beyond casino games with Shakebet's comprehensive sportsbook featuring all major Swedish and international sports. Bet on Allsvenskan football, SHL hockey, tennis, basketball, and hundreds of other markets with competitive odds and live betting options.</p>
+                    <button class="cta-button bg-casino-yellow text-casino-black px-8 py-4 text-xl font-black border-4 border-casino-black hover-transform" onclick="window.location.href='/register'">EXPLORE SPORTSBOOK</button>
+                </div>
+                <div>
+                    <img src="src/sportsbook-banner.png" alt="Shakebet Sportsbook" class="w-full h-auto border-4 border-casino-yellow">
+                </div>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <img src="src/calendar.png" alt="VIP Promotions Calendar" class="w-full h-auto border-4 border-casino-yellow">
+                </div>
+                <div class="space-y-6">
+                    <h2 class="text-4xl font-black text-shadow-3d text-casino-yellow">PROMOTIONS CALENDAR</h2>
+                    <p class="text-lg leading-relaxed">Never miss a bonus with Shakebet's monthly promotions calendar. Each day brings new opportunities including free spins Mondays, cashback Tuesdays, tournament Wednesdays, reload Thursdays, and weekend specials. VIP members receive exclusive calendar bonuses with enhanced rewards.</p>
+                    <button class="cta-button bg-casino-yellow text-casino-black px-8 py-4 text-xl font-black border-4 border-casino-black hover-transform" onclick="window.location.href='/register'">VIEW CALENDAR</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Licensing -->
+    <section class="py-20 px-4 bg-casino-black">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-black mb-16 text-shadow-3d text-casino-yellow">TRUST & LICENSING</h2>
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="trust-badge hover-lift">
+                    <div class="text-4xl text-casino-yellow mb-4"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="font-bold">ANJOUAN GAMING</h3>
+                    <p>Licensed & Regulated</p>
+                </div>
+                <div class="trust-badge hover-lift">
+                    <div class="text-4xl text-casino-yellow mb-4"><i class="fas fa-lock"></i></div>
+                    <h3 class="font-bold">SSL ENCRYPTED</h3>
+                    <p>256-bit Security</p>
+                </div>
+                <div class="trust-badge hover-lift">
+                    <div class="text-4xl text-casino-yellow mb-4"><i class="fas fa-random"></i></div>
+                    <h3 class="font-bold">RNG CERTIFIED</h3>
+                    <p>Fair Gaming Guaranteed</p>
+                </div>
+                <div class="trust-badge hover-lift">
+                    <div class="text-4xl text-casino-yellow mb-4"><i class="fas fa-user-shield"></i></div>
+                    <h3 class="font-bold">RESPONSIBLE GAMING</h3>
+                    <p>Player Protection Tools</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-black text-center mb-16 text-shadow-3d">FREQUENTLY ASKED QUESTIONS</h2>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="faq-item bg-casino-black border-4 border-casino-yellow p-6">
+                    <h3 class="text-xl font-bold text-casino-yellow mb-3">How do I claim the 200% welcome bonus?</h3>
+                    <p>Register a new account, make your first deposit of at least 100 kr using Swish or Trustly, and the bonus will be automatically credited to your account. The bonus has a 35x wagering requirement and is valid for 30 days.</p>
+                </div>
+                <div class="faq-item bg-casino-black border-4 border-casino-yellow p-6">
+                    <h3 class="text-xl font-bold text-casino-yellow mb-3">What payment methods are available for Swedish players?</h3>
+                    <p>Shakebet accepts Swish, Trustly, major credit cards (Visa/Mastercard), and direct bank transfers from all major Swedish banks including Swedbank, Handelsbanken, SEB, and Nordea.</p>
+                </div>
+                <div class="faq-item bg-casino-black border-4 border-casino-yellow p-6">
+                    <h3 class="text-xl font-bold text-casino-yellow mb-3">How fast are withdrawals processed?</h3>
+                    <p>Swish and Trustly withdrawals are processed within 1-3 hours, while bank transfers take 3-5 business days. VIP members enjoy priority processing with even faster withdrawal times.</p>
+                </div>
+                <div class="faq-item bg-casino-black border-4 border-casino-yellow p-6">
+                    <h3 class="text-xl font-bold text-casino-yellow mb-3">Is Shakebet Casino legal in Sweden?</h3>
+                    <p>Shakebet operates under an Anjouan Gaming license and accepts Swedish players. However, players should verify local gambling laws in their region and ensure they meet the minimum age requirement of 21 years.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-casino-black border-t-4 border-casino-yellow py-12 px-4">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-black text-casino-yellow mb-4">SHAKEBET</h3>
+                    <p class="mb-4">This is informational site about Shakebet casino.</p>
+                    <div class="flex space-x-4">
+                        <i class="fab fa-facebook text-casino-yellow text-2xl hover:text-white cursor-pointer"></i>
+                        <i class="fab fa-twitter text-casino-yellow text-2xl hover:text-white cursor-pointer"></i>
+                        <i class="fab fa-instagram text-casino-yellow text-2xl hover:text-white cursor-pointer"></i>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-casino-yellow mb-4">QUICK LINKS</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="hover:text-casino-yellow">Home</a></li>
+                        <li><a href="/slots" class="hover:text-casino-yellow">Games</a></li>
+                        <li><a href="/promotions" class="hover:text-casino-yellow">Bonuses</a></li>
+                        <li><a href="#about" class="hover:text-casino-yellow">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-casino-yellow mb-4">SUPPORT</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-casino-yellow">Live Chat</a></li>
+                        <li><a href="#" class="hover:text-casino-yellow">Email Support</a></li>
+                        <li><a href="#" class="hover:text-casino-yellow">FAQ</a></li>
+                        <li><a href="#" class="hover:text-casino-yellow">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-casino-yellow mb-4">RESPONSIBLE GAMING</h4>
+                    <div class="text-2xl text-casino-yellow mb-2"><i class="fas fa-exclamation-triangle"></i></div>
+                    <p class="text-sm mb-2">Gambling can be addictive. Play responsibly.</p>
+                    <p class="text-sm">Stödlinjen: 020-819 100</p>
+                </div>
+            </div>
+            
+            <div class="border-t-2 border-casino-yellow pt-8 text-center text-sm">
+                <p class="mb-4">Gambling can be addictive. Play responsibly. Consult if gambling is legal in your region. 21+</p>
+                <p>&copy; 2025 Shakebet Casino. Licensed by Anjouan Gaming Authority. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Parallax effect for hero image
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.parallax-element');
+            parallaxElements.forEach(element => {
+                const speed = 0.5;
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+
+        // Register button functionality
+        function redirectToRegister() {
+            window.location.href = '/register';
+        }
+
+        // Add click handlers to all CTA buttons
+        document.querySelectorAll('.cta-button').forEach(button => {
+            if (!button.onclick) {
+                button.onclick = redirectToRegister;
+            }
+        });
+    </script>
+</body>
+</html>
